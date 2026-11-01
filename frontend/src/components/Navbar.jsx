@@ -98,9 +98,9 @@ function Navbar() {
         <div className="navbar__container">
 
           {/* Logo */}
-          <a href="/" className="navbar__logo" aria-label="Home">
+          <Link to="/" className="navbar__logo" aria-label="Home">
             <img src={logo} alt="Next Step logo" />
-          </a>
+          </Link>
 
           {/* Menu (desktop links / mobile drawer) */}
           <nav className={`navbar__menu ${menuOpen ? "is-open" : ""}`} aria-label="Main navigation">
@@ -118,7 +118,7 @@ function Navbar() {
 
             <ul className="nav-links">
               <li>
-                <a href="#" className="nav-link is-active" onClick={closeAll}>Home</a>
+                <Link to="/" className="nav-link is-active" onClick={closeAll}>Home</Link>
               </li>
 
               <li>
