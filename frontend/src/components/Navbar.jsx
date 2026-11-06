@@ -122,7 +122,7 @@ function Navbar() {
               </li>
 
               <li>
-                <a href="#" className="nav-link" onClick={closeAll}>About</a>
+                <Link to={"/about"} className="nav-link" onClick={closeAll}>About</Link>
               </li>
 
               <li className="dropdown">
@@ -149,7 +149,7 @@ function Navbar() {
               </li>
 
               <li>
-                <a href="#" className="nav-link" onClick={closeAll}>Help &amp; Support</a>
+                <Link to={"/help&support"} className="nav-link" onClick={closeAll}>Help &amp; Support</Link>
               </li>
             </ul>
 
@@ -240,8 +240,9 @@ function Navbar() {
 
             {/* Buttons (desktop only) */}
             <div className="navbar__cta">
-              <a href="#" className="btn btn--outline">Create CV</a>
               <Link to="/login" className="btn btn--primary">Login</Link>
+              <a href="#" className="btn btn--outline">Create CV</a>
+              
             </div>
 
             {/* Hamburger (mobile only) */}

@@ -67,6 +67,10 @@ export default function Login() {
           </div>
 
           <form className="login-form" action="#" method="post">
+            {/* Role */}
+
+
+            {/* Email */}
             <div className="login-field">
               <label htmlFor="login-email" className="login-label">
                 Email address
@@ -88,6 +92,7 @@ export default function Login() {
               </div>
             </div>
 
+            {/* Password */}
             <div className="login-field">
               <label htmlFor="login-password" className="login-label">
                 Password
@@ -114,9 +119,9 @@ export default function Login() {
                 <input id="login-remember" name="remember" type="checkbox" />
                 <span>Keep me logged in</span>
               </label>
-              <a href="/forgot-password" className="login-link">
+              <Link to="/forgot-password" className="login-link">
                 Forgot password?
-              </a>
+              </Link>
             </div>
 
             <button type="submit" className="login-btn login-btn-primary">
